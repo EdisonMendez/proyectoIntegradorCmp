@@ -17,7 +17,8 @@ from django.conf import settings
 from gestionDB.models import infoGeneralProducto, infoProductoBodega
 import FinalProject
 
-conn = pyodbc.connect('Driver={4D v19 ODBC Driver 64-bit} ;Server=181.198.83.12 ;UID=API ;PWD=API')
+#se ocultan los parámetros de conexión por protección a los datos de origen
+conn = pyodbc.connect('Driver={4D v19 ODBC Driver 64-bit} ;Server=**.**.**.** ;UID=** ;PWD=**')
 curs = conn.cursor()
 curs.execute(
     "select PRODUCT_NAME, PRODUCT_ID, AVAILABLE from INVT_Ficha_PrincipaL where AVAILABLE >= 0 order by AVAILABLE desc ")
