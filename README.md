@@ -74,8 +74,8 @@ loss y val loss que aparecen cuando la red se está entrenando.
 
 La red neuronal LSTM se creó con la siguiente arquitectura:
 
-- 4 capas ocultas, 2 capas dense (una de ellas con función de activación tanh). 
-- optimizador:Adam 
+- 1 capa de entrada LSTM con 4 neuronas, 1 capa oculta dense con función de activación tanh, con 3 neuronas, y una capa dense de salida con una neurona. 
+- optimizador:SGD 
 - loss: MSE
 - épocas/eppochs: 200. 
 
